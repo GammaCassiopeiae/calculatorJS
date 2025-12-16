@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Calculate how much you'll pay</h1>
+        <div class="calculator-content">
+            <div class="left-section">
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <input type="number" id="products" placeholder="Products quantity" min="0" value="50">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <input type="number" id="orders" placeholder="Estimated orders in month" min="0" value="30">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <select id="package">
+                            <option value="premium">Premium</option>
+                            <option value="basic">Basic</option>
+                            <option value="standard">Standard</option>
+                        </select>
+                        <span class="info-icon">?</span>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="accounting" checked>
+                        <label for="accounting">Accounting</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="terminal" checked>
+                        <label for="terminal">Rental of a payment terminal</label>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="price-item">
+                    <div>
+                        <span class="price-label">Products</span>
+                        <span class="price-range" id="products-range">50 * $0.2</span>
+                    </div>
+                    <span class="price-value" id="products-price">$10</span>
+                </div>
+                <div class="price-item">
+                    <div>
+                        <span class="price-label">Orders</span>
+                        <span class="price-range" id="orders-range">30 * $0.25</span>
+                    </div>
+                    <span class="price-value" id="orders-price">$7.5</span>
+                </div>
+                <div class="price-item">
+                    <div>
+                        <span class="price-label">Package</span>
+                        <span class="price-range">Premium</span>
+                    </div>
+                    <span class="price-value" id="package-price">$60</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-label">Accounting</span>
+                    <span class="price-value" id="accounting-price">$35</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-label">Terminal</span>
+                    <span class="price-value" id="terminal-price">$5</span>
+                </div>
+                <div class="total-section">
+                    <span class="total-label">Total</span>
+                    <span class="total-value" id="total-price">$117.5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
