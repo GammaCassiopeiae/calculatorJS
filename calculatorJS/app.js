@@ -61,3 +61,4 @@ accountingCheckbox.addEventListener('change', calculatePrices);
 terminalCheckbox.addEventListener('change', calculatePrices);
 
 calculatePrices();
+console.log("Works");
